@@ -70,9 +70,11 @@ function Game(props){
         item.isSelected = ! item.isSelected;
         // 查看是否区域已达到上限
         if((isBack) && (numSelectedBack>=props.game.back.max) && item.isSelected === true ){
+            alert('您已选择的号码数量已经达到上限.'+"（"+numSelectedBack+"）");
             return;
         }
         if((!isBack) && (numSelectedFront>=props.game.front.max) && item.isSelected === true ){
+            alert('您已选择的号码数量已经达到上限.'+"（"+numSelectedFront+"）");
             return;
         }
 
@@ -145,6 +147,15 @@ function Game(props){
      return ballList;
     }
 
+    //提示渲染函数
+    const guidenceNote =()=>{
+        if(props.game.back === undefined){
+            return "至少选择 "+props.game.front.min +" 个号码"
+        }
+        else{
+            return "请至少选择前区选择 "+props.game.front.min +" 个号码, 在后区选择 "+props.game.back.min +"个号码"
+        }
+    }
 
     return <React.Fragment>
          <div class='content' >
@@ -159,7 +170,8 @@ function Game(props){
     <footer class='footer' >
       <img onClick={()=>{handleClear();}} src={trashIcon} alt='清空' ></img>
       
-      <div>一共{numBet}注,{numBet*props.game.price}元</div>
+     {numBet>0 && <div>一共{numBet}注,{numBet*props.game.price}元</div>}
+     {numBet===0 && <div>{guidenceNote()}</div>}
       <img  src={checkmarkIcon} alt='确定' ></img>
     </footer>
     </React.Fragment>
