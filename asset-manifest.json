@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/lottery-app/static/css/main.7377e532.chunk.css",
-    "main.js": "/lottery-app/static/js/main.ff04e215.chunk.js",
-    "main.js.map": "/lottery-app/static/js/main.ff04e215.chunk.js.map",
-    "runtime-main.js": "/lottery-app/static/js/runtime-main.327735f0.js",
-    "runtime-main.js.map": "/lottery-app/static/js/runtime-main.327735f0.js.map",
-    "static/js/2.74eccc46.chunk.js": "/lottery-app/static/js/2.74eccc46.chunk.js",
-    "static/js/2.74eccc46.chunk.js.map": "/lottery-app/static/js/2.74eccc46.chunk.js.map",
-    "static/js/3.556107ae.chunk.js": "/lottery-app/static/js/3.556107ae.chunk.js",
-    "static/js/3.556107ae.chunk.js.map": "/lottery-app/static/js/3.556107ae.chunk.js.map",
+    "main.css": "/lottery-app/static/css/main.d50a629f.chunk.css",
+    "main.js": "/lottery-app/static/js/main.d76d916d.chunk.js",
+    "main.js.map": "/lottery-app/static/js/main.d76d916d.chunk.js.map",
+    "runtime-main.js": "/lottery-app/static/js/runtime-main.29adfde0.js",
+    "runtime-main.js.map": "/lottery-app/static/js/runtime-main.29adfde0.js.map",
+    "static/js/2.73630450.chunk.js": "/lottery-app/static/js/2.73630450.chunk.js",
+    "static/js/2.73630450.chunk.js.map": "/lottery-app/static/js/2.73630450.chunk.js.map",
+    "static/js/3.eda34443.chunk.js": "/lottery-app/static/js/3.eda34443.chunk.js",
+    "static/js/3.eda34443.chunk.js.map": "/lottery-app/static/js/3.eda34443.chunk.js.map",
     "index.html": "/lottery-app/index.html",
-    "static/css/main.7377e532.chunk.css.map": "/lottery-app/static/css/main.7377e532.chunk.css.map",
-    "static/js/2.74eccc46.chunk.js.LICENSE.txt": "/lottery-app/static/js/2.74eccc46.chunk.js.LICENSE.txt"
+    "static/css/main.d50a629f.chunk.css.map": "/lottery-app/static/css/main.d50a629f.chunk.css.map",
+    "static/js/2.73630450.chunk.js.LICENSE.txt": "/lottery-app/static/js/2.73630450.chunk.js.LICENSE.txt",
+    "static/media/tick.1b84e54b.png": "/lottery-app/static/media/tick.1b84e54b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.327735f0.js",
-    "static/js/2.74eccc46.chunk.js",
-    "static/css/main.7377e532.chunk.css",
-    "static/js/main.ff04e215.chunk.js"
+    "static/js/runtime-main.29adfde0.js",
+    "static/js/2.73630450.chunk.js",
+    "static/css/main.d50a629f.chunk.css",
+    "static/js/main.d76d916d.chunk.js"
   ]
 }
