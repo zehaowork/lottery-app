@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   
-  const games =[new Lottery('双色球',{maxNum:33,min:6,max:20},{maxNum:15,min:1,max:5},2),new Lottery('大乐透',{maxNum:35,min:5,max:20},{maxNum:12,min:2,max:5},2),new Lottery('单区数字彩',{maxNum:35,min:5,max:20},undefined,2)];
+  const games =[new Lottery('双色球',{maxNum:33,min:6,max:20},{maxNum:16,min:1,max:5},2),new Lottery('大乐透',{maxNum:35,min:5,max:20},{maxNum:12,min:2,max:5},2),new Lottery('单区数字彩',{maxNum:35,min:5,max:20},undefined,2)];
   const [currentIdx, setCurrentIdx] = useState(0);
   
   
