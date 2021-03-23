@@ -1,0 +1,17 @@
+.tab-item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tab-item div {
+  width: 100%;
+  height: 1rem;
+}
+
+.active {
+  background-color: #f82d29;
+}
