@@ -136,19 +136,19 @@ function Game(props){
 
 
   
-  //数字彩号码选择渲染函数
+  //数字彩号码渲染函数
     const renderBalls = (area,isBack)=>{
      
       let ballList = [];
       
       area.forEach(el=>{
-          ballList.push(<Ball onClick={()=>{handleClick(isBack,el.num);}} isBack={isBack} isSelected={el.isSelected} num={el.num} />)
+          ballList.push(<Ball key={el.num} onClick={()=>{handleClick(isBack,el.num);}} isBack={isBack} isSelected={el.isSelected} num={el.num} />)
       })
      return ballList;
     }
 
     //提示渲染函数
-    const guidenceNote =()=>{
+    const guidanceNote =()=>{
         if(props.game.back === undefined){
             return "至少选择 "+props.game.front.min +" 个号码"
         }
@@ -171,7 +171,7 @@ function Game(props){
       <img onClick={()=>{handleClear();}} src={trashIcon} alt='清空' ></img>
       
      {numBet>0 && <div>一共{numBet}注,{numBet*props.game.price}元</div>}
-     {numBet===0 && <div>{guidenceNote()}</div>}
+     {numBet===0 && <div>{guidanceNote()}</div>}
       <img  src={checkmarkIcon} alt='确定' ></img>
     </footer>
     </React.Fragment>

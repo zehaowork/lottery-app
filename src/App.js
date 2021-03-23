@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   
-  const games =[new Lottery('双色球',{maxNum:33,min:6,max:20},{maxNum:16,min:1,max:5},2),new Lottery('大乐透',{maxNum:35,min:5,max:20},{maxNum:12,min:2,max:5},2),new Lottery('单区数字彩',{maxNum:35,min:5,max:20},undefined,2)];
+  const games =[new Lottery("1",'双色球',{maxNum:33,min:6,max:20},{maxNum:16,min:1,max:5},2),new Lottery("2",'大乐透',{maxNum:35,min:5,max:20},{maxNum:12,min:2,max:5},2),new Lottery("3",'单区数字彩',{maxNum:35,min:5,max:20},undefined,2)];
   const [currentIdx, setCurrentIdx] = useState(0);
   
   
@@ -22,13 +22,13 @@ function App() {
 
 //数字彩tab的渲染函数
   const gameItem = games.map((game,index)=>{
-    return<Tab switchTab={()=>{switchTab(index)}} currentIdx={currentIdx} index={index} name={game.name} />
+    return<Tab  key ={game.id} switchTab={()=>{switchTab(index)}} currentIdx={currentIdx} index={index} name={game.name} />
   })
 
   //条件渲染，数字彩 => 切换不同数字彩 会导致 之前进度的丢失。
   const renderGame = games.map((game,index)=>{
       if(currentIdx === index){
-        return <Game  game={game} />
+        return <Game game={game} />
       }
       else{
         return null;
