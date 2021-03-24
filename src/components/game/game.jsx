@@ -153,7 +153,7 @@ function Game(props){
             return "至少选择 "+props.game.front.min +" 个号码"
         }
         else{
-            return "请至少选择前区选择 "+props.game.front.min +" 个号码, 在后区选择 "+props.game.back.min +"个号码"
+            return "请至少在前区选择"+props.game.front.min +"个号码, 在后区选择 "+props.game.back.min +"个号码"
         }
     }
 
