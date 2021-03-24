@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lottery-app/static/css/main.df0dbcf6.chunk.css",
+    "main.css": "/lottery-app/static/css/main.519317f8.chunk.css",
     "main.js": "/lottery-app/static/js/main.b377345f.chunk.js",
     "main.js.map": "/lottery-app/static/js/main.b377345f.chunk.js.map",
     "runtime-main.js": "/lottery-app/static/js/runtime-main.29adfde0.js",
@@ -10,13 +10,13 @@
     "static/js/3.eda34443.chunk.js": "/lottery-app/static/js/3.eda34443.chunk.js",
     "static/js/3.eda34443.chunk.js.map": "/lottery-app/static/js/3.eda34443.chunk.js.map",
     "index.html": "/lottery-app/index.html",
-    "static/css/main.df0dbcf6.chunk.css.map": "/lottery-app/static/css/main.df0dbcf6.chunk.css.map",
+    "static/css/main.519317f8.chunk.css.map": "/lottery-app/static/css/main.519317f8.chunk.css.map",
     "static/js/2.73630450.chunk.js.LICENSE.txt": "/lottery-app/static/js/2.73630450.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.29adfde0.js",
     "static/js/2.73630450.chunk.js",
-    "static/css/main.df0dbcf6.chunk.css",
+    "static/css/main.519317f8.chunk.css",
     "static/js/main.b377345f.chunk.js"
   ]
 }
