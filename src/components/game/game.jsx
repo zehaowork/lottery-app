@@ -38,10 +38,11 @@ function Game(props){
    const calculateNumBets = ()=>{
        let frontNum = 0;
        let backNum = 0;
-
+        console.log(numSelectedFront)
         // 捕捉单区数字彩时出现的 back 是 undefined的错误
         try{
             if(  numSelectedFront<props.game.front.min || numSelectedBack<props.game.back.min){
+                setNumBet(0);
                 return;
             }
             else{
@@ -52,6 +53,7 @@ function Game(props){
         }
         catch(e){
             if(numSelectedFront<props.game.front.min){
+                setNumBet(0);
                 return;
             }
             else{
