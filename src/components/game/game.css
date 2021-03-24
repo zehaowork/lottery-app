@@ -1,5 +1,5 @@
 .content {
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
 .selection-area {
@@ -7,23 +7,31 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
-  padding: 3rem;
+  padding: 0 2rem;
 }
 .selection-area > div {
-  display: flex;
-  padding: 3rem 0;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  border-bottom: 0.14rem solid grey;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 0.14rem solid #d0d0d0;
+  width: 100%;
+  padding: 10px;
 }
 
 .selection-area > div:last-child {
-  border-bottom: 0.14rem solid white;
+  border-bottom: 0.14rem solid transparent;
 }
+/* 伪元素，用于填充最后一行的空间 */
+/* .selection-area > div::after {
+  content: "";
 
+  margin: auto;
+} */
 .footer {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   bottom: 0;
   display: flex;

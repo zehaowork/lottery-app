@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React,{useState} from 'react'
 import Tab from './components/tab/tab.jsx'
 import Lottery from './lottery'
 import Game from './components/game/game.jsx'
@@ -22,7 +22,7 @@ function App() {
 
 //数字彩tab的渲染函数
   const gameItem = games.map((game,index)=>{
-    return<Tab  key ={game.id} switchTab={()=>{switchTab(index)}} currentIdx={currentIdx} index={index} name={game.name} />
+    return <Tab  key ={game.id} switchTab={()=>{switchTab(index)}} currentIdx={currentIdx} index={index} name={game.name} />
   })
 
   //条件渲染，数字彩 => 切换不同数字彩 会导致 之前进度的丢失。

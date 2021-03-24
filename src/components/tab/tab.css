@@ -9,9 +9,13 @@
 
 .tab-item div {
   width: 100%;
-  height: 1rem;
+  height: 0.5rem;
 }
 
 .active {
   background-color: #f82d29;
+}
+
+.p-active {
+  color: #f82d29;
 }
